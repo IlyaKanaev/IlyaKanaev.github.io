@@ -1,32 +1,104 @@
+* {
+    font-family: Arimo, sans-serif;
+}
+
 a {
     text-decoration: none;
 }
 
-.menu {
-    color: cornflowerblue;
-    font-size: 16px;
-    line-height: 20px;
+button {
+    border: none;
 }
 
-.title {
-    color: #222222;
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: bold;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 40px;
 }
 
-.text {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-    color: #7D7987
+.header__link {
+    display: inline-block;
 }
 
-.subtitle {
-    color: coral;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 80px;
+.text,
+.home_text_link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    color: #F25822
+}
+
+.top__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 95px;
+}
+
+.top__info {
+    width: 30%;
+}
+
+.seo_text {
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 69px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.provide_text {
+    color: rgb(136, 136, 136);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.buttons {
+    display: flex;
+    align-content: center;
+}
+
+.start_button,
+.watch button {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2.5;
+    width: 140px;
+}
+
+.start_button {
+    border-radius: 50px;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+    background: rgb(242, 88, 34);
+    margin-right: 70px;
+    border: rgb(2, 221, 20);
+    color: rgb(255, 255, 255);
+}
+
+.watch_button {
+    color: rgb(170, 170, 170);
+    background: rgb(255, 255, 255);
+}
+
+.top__logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    background: rgb(255, 255, 255);
+    align-items: center;
+}
+
+.bottom_logo {
+    size: 50px;
+    margin: 10px;
 }
