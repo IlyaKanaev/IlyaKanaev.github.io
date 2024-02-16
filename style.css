@@ -1,7 +1,10 @@
 * {
-    font-family: Arimo, sans-serif;
+    font-family: Lato, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -10,199 +13,204 @@ button {
 }
 
 .center {
-    padding-left: calc(50% - 512px);
-    padding-right: calc(50% - 512px);
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
 }
 
 
-/* header */
+/*region header*/
 
-.heading__bar {
+.header {
+    background: rgb(34, 34, 34);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-.heading__logo {
+.header__content {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/*endregion*/
+
+
+/*region banner*/
+
+.banner {
+    background: rgb(241, 228, 230);
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.menu__links {
+.banner__text {
     display: flex;
-}
-
-.text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0%;
-    text-align: left;
-    margin: 20px;
-    color: black;
-}
-
-.heading_logo_text {
-    color: rgb(242, 88, 34);
-}
-
-
-/* Контент */
-
-.content__block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 400;
-    letter-spacing: 0%;
+    gap: 10px;
+    min-font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0;
     text-align: left;
 }
 
-.content__text {
-    display: flex;
-    flex-direction: column;
-}
-
-.SEO_text {
-    font-size: 60px;
-    line-height: 69px;
-}
-
-.description_text {
-    color: rgb(136, 136, 136);
-    font-size: 20px;
-    line-height: 23px;
-    padding-block: 20px;
-}
-
-.content__buttons {
-    display: flex;
-    align-content: center;
-}
-
-.content_button {
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 3;
-    width: 140px;
-}
-
-.content_button_left {
-    border-radius: 50px;
-    background: rgb(242, 88, 34);
-    color: rgb(255, 255, 255);
-}
-
-.content_button_left:hover {
-    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
-}
-
-.content_button_right {
-    color: rgb(170, 170, 170);
-    background: rgb(255, 255, 255);
+.banner_rectangle {
+    min-width: 12px;
+    background: #F16D7F;
+    ;
 }
 
 
-/* Логотипы */
-
-.logo__panel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 100%;
-    gap: 6%;
-    background: rgb(255, 255, 255);
-}
-
-.logo_img {
-    max-width: 10%;
-    margin-block: 50px;
-}
+/*endregion*/
 
 
-/* Стикеры */
+/*region offer*/
 
-.stickers {
+.offer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-block: 90px;
+    gap: 30px;
 }
 
-.button_sticker {
-    border-radius: 20px;
-    text-align: left;
-    background: rgb(255, 255, 255);
+.image-container {
+    min-height: 260px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 0 128px rgba(0, 0, 0, 0.6) inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.button_sticker:hover {
-    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+.image-container1 {
+    background-image: url("./img/main/offer/Layer 43.png");
 }
 
-.img_sticker,
-.sticker_text1,
-.sticker_text2,
-.sticker_text3 {
+.image-container2 {
+    background-image: url("./img/main/offer/Rectangle 30.png");
+}
+
+.image-container3 {
+    background-image: url("./img/main/offer/Rectangle 31.png");
+}
+
+.image-container4 {
+    grid-column: 1 / 4;
+    background-image: url("./img/main/offer/Rectangle 20.png");
+    min-height: 180px;
+}
+
+.image-text {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.pink-color {
+    color: rgb(241, 109, 127);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/*endregion*/
+
+
+/*region catalog*/
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.catalog_header {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(248, 248, 248);
+}
+
+.catalog-img {
+    min-width: 100%;
+}
+
+.text1,
+.text2,
+.item_name,
+.item-description,
+.item-price {
+    font-weight: 400;
+    letter-spacing: 0;
     margin: 10px;
 }
 
-.img_sticker {
-    max-width: 60px;
+.text1 {
+    color: rgb(34, 34, 34);
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0;
 }
 
-.sticker_text1 {
-    font-size: 24px;
+.text2 {
+    color: rgb(159, 159, 159);
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.textarea {
+    text-align: left;
+}
+
+.item_name {
+    color: rgb(0, 0, 0);
+    font-size: 13px;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 15px;
 }
 
-.sticker_text2 {
-    color: rgb(136, 136, 136);
-    font-size: 15px;
+.item-description {
+    color: #a6a4a4;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.item-price {
+    color: rgb(241, 109, 127);
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.button {
+    place-self: center;
+    grid-column-start: 2;
+    width: 212px;
+    height: 42px;
+    background-color: transparent;
+    border: 1px solid rgb(241, 109, 127);
+    ;
+}
+
+.pink-color-button {
+    color: rgb(241, 109, 127);
+    font-size: 16px;
     font-weight: 400;
-    line-height: 150%;
-    margin-bottom: 20px;
-}
-
-.sticker_text3 {
-    font-size: 11px;
-    font-weight: 700;
-    line-height: 150%;
 }
 
 
-/* Описание услуг */
-
-.vertical_block {
-    text-align: center;
-}
-
-.why_you_text {
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 45px;
-}
-
-.Distinctively_text {
-    color: rgb(136, 136, 136);
-}
-
-
-/* Стикеры_сервис */
-
-.stickers {
-    display: flex;
-    align-items: end;
-}
-
-.service__sticker {
-    text-align: center;
-    background: rgb(255, 255, 255);
-    margin-bottom: 20px;
-}
-
-.sticker_text2 {
-    color: rgb(170, 170, 170);
-    margin-bottom: 20px;
-}
+/*endregion*/
