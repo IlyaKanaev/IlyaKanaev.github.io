@@ -50,7 +50,7 @@ button {
 .banner__text {
     display: flex;
     gap: 10px;
-    min-font-size: 32px;
+    font-size: 32px;
     font-weight: 700;
     letter-spacing: 0;
     text-align: left;
@@ -72,6 +72,8 @@ button {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-block: 65px;
+    margin-inline: 15%;
 }
 
 .image-container {
@@ -128,6 +130,7 @@ button {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-inline: 15%;
 }
 
 .catalog_header {
@@ -144,6 +147,7 @@ button {
     justify-content: center;
     align-items: center;
     background: rgb(248, 248, 248);
+    max-width: 100%;
 }
 
 .catalog-img {
