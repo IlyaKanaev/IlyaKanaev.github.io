@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_main,
+.header_main_right,
+.header_main_left,
+.header_main_button {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 5px;
+}
+
+.main_content_2_title,
+.main_content_4,
+.main_page_section_5,
+.main_page_section_6,
+.header_main_right_menu,
+.header_main_right {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.main_content_1 {
+    text-align: center;
+    background-color: #e9e6ed;
+    justify-content: center;
+}
+
+.main_content_1_description {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main_content_1_title,
+.main_content_1_container_button {
+    margin: 10px;
+}
+
+.main_content_2,
+.main_content_3 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.main_content_2_left_center,
+.main_content_3_center_right {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.main_content_2_right {
+    background-image: url("./img/cherny_paren.png");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    width: 1100px;
+    height: 800px;
+    background-color: transparent;
+    color: white;
+    padding-left: 80px;
+    padding-top: 80px;
+    font-size: 80px;
+}
+
+.main_content_3_left {
+    background-image: url("./img/kudryavaya_devushka.png");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    width: 1100px;
+    height: 800px;
+    background-color: transparent;
+    color: black;
+    padding-left: 80px;
+    padding-top: 80px;
+    font-size: 80px;
+}
+
+.main_content_2_right_button {
+    background-color: transparent;
+    color: white;
+    margin-left: 10px;
+    margin-top: 40px;
+    font-size: 24px;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.main_content_3_left_button {
+    background-color: transparent;
+    color: black;
+    margin-left: 10px;
+    margin-top: 40px;
+    font-size: 24px;
+    padding: 20px;
+    border: 2px solid black;
+}
